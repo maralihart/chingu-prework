@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* NAVIGATION BOARD */
+/* NAVIGATION BAR */
 
 nav {
     display: flex;
@@ -30,3 +30,48 @@ nav a:hover{
 }
 
 /* need to add in the active tab -- ask discord about that */
+
+header {
+    /* parallax effect */
+    background: url("https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* text here */
+    text-align: center;
+    align-content: center;
+}
+
+.card {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 2px solid black;
+    margin: 15px;
+    padding: 10px;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content {
+    margin: 0px 100px;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 15px;
+    background: gold;
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+}
