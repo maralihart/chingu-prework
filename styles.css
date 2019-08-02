@@ -46,15 +46,16 @@ header {
 }
 
 .card {
-    height: 400px;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
 
     border: 2px solid black;
     margin: 15px;
-    padding: 10px;
+    padding-bottom: 15px;
+
+    background: blanchedalmond;
 }
 
 .card img {
@@ -63,8 +64,23 @@ header {
     object-fit: cover;
 }
 
+.card h2 {
+    margin: 10px 40px;
+}
+
+.card p {
+    margin: 0px 40px;
+}
+
+.card .button {
+    margin: 10px 40px;
+    bottom
+}
+
 .content {
     margin: 0px 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 .button {
