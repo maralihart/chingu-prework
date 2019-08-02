@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BOARD */
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+    font-size: 1.4rem;
+}
+
+nav a {
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+    color: blue;
+}
+
+nav a:hover{
+    transition-duration: .4s;
+    background-color: pink;
+    color: white;
+}
+
+/* need to add in the active tab -- ask discord about that */
