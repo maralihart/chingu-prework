@@ -196,11 +196,3 @@ footer {
 footer a {
     text-decoration: none;
 }
-/* 
-@media all and (max-width: 1200px) {
-    .four-card .card {
-        width: 45%;
-        flex-wrap: wrap;
-        border: 5px solid orange;
-    }
-} */
