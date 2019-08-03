@@ -16,19 +16,12 @@ nav {
 nav a {
     padding: 15px;
     margin: 5px;
-    border: 1px solid black;
+    border: 0px solid black;
     border-radius: 5px;
-    background-color: white;
+    background: gold;
     text-decoration: none;
-    color: blue;
-}
-
-nav a:hover{
-    transition-duration: .4s;
-    background-color: pink;
     color: white;
 }
-
 /* need to add in the active tab -- ask discord about that */
 
 header {
@@ -51,7 +44,8 @@ header {
     flex-direction: column;
     align-content: center;
 
-    border: 2px solid black;
+    border: 0px solid black;
+    border-radius: 20px;
     margin: 15px;
     padding-bottom: 15px;
 
@@ -62,6 +56,8 @@ header {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    border: 0px solid black;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card h2 {
@@ -74,7 +70,6 @@ header {
 
 .card .button {
     margin: 10px 40px;
-    bottom
 }
 
 .content {
@@ -84,10 +79,66 @@ header {
 }
 
 .button {
-    border: 1px solid black;
+    border: 0px solid black;
     padding: 15px;
     background: gold;
     text-align: center;
     width: 150px;
     border-radius: 10px;
+}
+
+.button:hover, nav a:hover{
+    transition-duration: .4s;
+    color: white;
+    background: skyblue;
+}
+
+.divider {
+    /* parallax effect */
+    background: url("https://images.pexels.com/photos/67560/bee-pollen-nectar-yellow-67560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+.contact-form {
+    background: url("https://images.pexels.com/photos/965625/pexels-photo-965625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.contact-form p, .contact-form form {
+    background: rgba(256, 256, 256, .5);
+    width: 50%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid purple;
+
+    justify-content: space-around;
+}
+
+.contact-form .message, .contact-form .contact-info {
+    width: 47%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 5px solid yellow;
 }
